@@ -1,0 +1,282 @@
+body{
+ font-family: 'Roboto', sans-serif;
+}
+
+.sliderSection 
+{
+  background: #f9f9f9;
+  padding-left: 50px ;
+  height: 100vh;
+  padding-right: 20px ;
+   
+  }
+  .carousel{
+    top:30%;
+  }
+
+  .carousel-inner img{
+    height: 250px;
+    cursor:pointer;
+  }
+  .carousel-indicators li{
+    background: teal;
+  }
+  .carousel-indicators .active{
+    background: #FF7143;
+  }
+  .carousel-indicators li:hover{
+ background:#FF7143; 
+}
+.carousel-indicators{
+  bottom:-53px;
+}
+  .rightCol , .leftCol{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+
+  }
+.signUpSection{
+ 
+  margin: 75px auto;
+  padding-right:6vw;
+  padding-left:6vw ;
+
+}
+
+
+.form-control.no-validate:valid {
+    border-color: $input-border-color;
+    padding: $input-padding-x;
+    background: $input-bg;
+}
+.custom-select.is-valid, .form-control.is-valid, .was-validated .custom-select:valid, .was-validated .form-control:valid{
+  border-color: #ced4da;
+}
+.custom-select.is-invalid:focus, .form-control.is-invalid:focus, .was-validated .custom-select:invalid:focus, .was-validated .form-control:invalid:focus{
+  box-shadow: none; 
+}
+.custom-select.is-valid:focus, .form-control.is-valid:focus, .was-validated .custom-select:valid:focus, .was-validated .form-control:valid:focus{
+  box-shadow: none;
+}
+.signUpForm input,.signUpForm  select{
+
+border-top:none;
+padding-left: 0px;
+border-radius: 0px;
+border-right:none;
+border-left:none;
+transition: 0.3s all ease-in;
+
+}
+.signUpForm  select option{
+  transition: 0.3s all ease-in;
+}
+.form-control:focus{
+  border-color:#FF7143;
+  box-shadow :0 0 0 #fff;
+}
+.signUpForm select option >.form-control:focus{
+  border-color:#FF7143;
+  box-shadow :0 0 0 #fff;
+}
+
+.singbtn{
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 5px 25px;
+  background: #FF7143;
+  border: none;
+}
+.singbtn:hover,.singbtn:focus,.singbtn:active{
+  background: teal; 
+  box-shadow: none;
+}
+.signUpHeading h1{
+  font-size: 3vw;
+  font-family:'Bebas Neue', cursive;
+  color: #FF7143; 
+
+}
+.lowerContent a{
+  font-size: 13px;
+  color:#FF7143; 
+}
+ 
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+.modal-content{
+  border-radius: 0px;
+  border:none;
+}
+.modal-header{
+border:none;
+text-align: center;
+
+}
+
+.modal-body p{
+  font-family:'Bebas Neue', cursive;
+  color:#FF7143;
+  font-size: 20px;
+  text-align:center;
+  margin-bottom: 2rem;
+
+}
+/*.display_msg{
+  color:red;
+  font-weight: bold;
+  font-size:14px;
+}*/
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #FF7143;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 0% 39% 7%;
+  box-shadow: inset 0px 0px 0px #FF7143;
+  animation: fill .5s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+  transform-origin: 60% 6s0%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.4s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.2, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 50px #FF7143;
+  }
+}
+
+.input-group-text {
+background: transparent;
+border-top: 0px;
+border-right: 0px;
+}
+@media only screen and (max-width: 768px){
+ .sliderSection 
+{
+  
+  padding-left: 50px ;
+  height: 50vh;
+  padding-right: 20px ;
+   
+  }
+  .carousel{
+    top:10%;
+  }
+
+  .carousel-inner img{
+    height: 200px;
+    cursor:pointer;
+  }
+  .signUpHeading h1{
+  font-size: 5vw;
+
+
+}
+
+}
